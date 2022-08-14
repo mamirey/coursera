@@ -1,95 +1,121 @@
+*{
+    box-sizing:border-box;
+}
 body{
+   
     font-family: 'Prompt', sans-serif;
-    box-sizing: border-box;
-     font-size: 20px;     
-}
-div{position: relative;
-margin: }
-.sect{
-    background-color: bisque;
-    
-}
-.sectiontitle1{
-    float: left;
-    position: absolute;
-    border: 1px solid black;
-    background-color: burlywood;
-}
-.sectiontitle2{
-    float: left;
-    position: absolute;
-    border: 1px solid black;
-    background-color:darkseagreen;
-}
-.sectiontitle3{
-    float: left;
-    position: absolute;
-    border: 1px solid black;
-    background-color:chocolate;
+    font-size: 1em;   
+    margin:0;
+    padding: 0;
 }
 h1{
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+div{
+    width: 100%;
+   /*margin: 3%;*/
+  
+    
+   
+ }
+div > section{
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    padding-top: 0px;
+    
+    margin-top: 3%;
+    margin-right: auto;
+}
+span{
+    float: right;
+   padding: 5px 50px 5px 50px;
+   margin-right: -10px;
+    border: 1px solid black;
+    font-size: 1.25em;
+    font-weight:bold;
+}
+
+.sect1{
+    background-color: bisque; 
+   
+}
+.sectiontitle1{
+    background-color: burlywood;
+}
+
+.sectiontext{
+    clear: both;
+}
+
+.sect2{
+    background-color:darkgoldenrod;   
+}
+.sectiontitle2{
+    background-color:darkseagreen;
+}
+
+.sect3{
+    background-color:darksalmon; 
+  
+   
+}
+.sectiontitle3{
+    background-color:chocolate;
 }
 
 /**Desktop devices**/
-@media (min-width:992px){
-    .col-ld-1, .col-ld-2,.col-ld-3,.col-ld-4, .col-ld-5, .col-ld-6, .col-ld-7, .col-ld-8, .col-ld-9, .col-ld-10, .col-ld-11, .col-ld-12{
-        float: left;
-        border: 1px solid black;
-    }
-    .col-ld-1{
-        width: 8.33%;
-    }
-     .col-ld-2{
-        width: 16.66%;
-    }
-    
- .col-ld-3{
-        width: 25%;
-    }
-     .col-ld-4{
-        width: 33%%;
-    }
-     .col-ld-5{
-        width: 41.66%;
-    }
-     .col-ld-6{
-        width: 50%;
-    }
-     .col-ld-7{
-        width: 58.33%;
-    }
-     .col-ld-8{
-        width: 66.66%;
-    }
-     .col-ld-9{
-        width: 74.99%;
-    }
-     .col-ld-10{
-        width: 83.33%;
-    }
-     .col-ld-11{
-        width: 91.66%;
-    }
-     .col-ld-12{
-        width: 100%;
-    }
+@media (min-width: 992px) {
+  
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
 }
 /**Tablet devices**/
-@media (min-width:768px)and (max-width:991px){
-    .col-td-1, .col-td-2,.col-td-3,.col-td-4, .col-td-5, .col-td-6, .col-td-7, .col-td-8, .col-td-9, .col-td-10, .col-td-11, .col-td-12{
-        float: left;
-        border: 1px solid black;
-    }
+@media (min-width:768px) and (max-width:991px){
     .col-td-1{
         width: 8.33%;
     }
      .col-td-2{
         width: 16.66%;
-    }
-    
+    }  
  .col-td-3{
         width: 25%;
     }
@@ -121,53 +147,4 @@ h1{
         width: 100%;
     }
 }
-/**Mobile devices**/
-@media (max-width:767px){
-    .col-md-1, .col-md-2,.col-md-3,.col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
-        float: left;
-        border: 1px solid black;
-    }
-    .col-md-1{
-        width: 8.33%;
-    }
-     .col-md-2{
-        width: 16.66%;
-    }
-    
- .col-md-3{
-        width: 25%;
-    }
-     .col-md-4{
-        width: 33%%;
-    }
-     .col-md-5{
-        width: 41.66%;
-    }
-     .col-md-6{
-        width: 50%;
-    }
-     .col-md-7{
-        width: 58.33%;
-    }
-     .col-md-8{
-        width: 66.66%;
-    }
-     .col-md-9{
-        width: 74.99%;
-    }
-     .col-md-10{
-        width: 83.33%;
-    }
-     .col-md-11{
-        width: 91.66%;
-    }
-     .col-md-12{
-        width: 100%;
-    }
-}
 
-h1{
-   text-align: center;
-    font-size: 3em;
-    
-}
